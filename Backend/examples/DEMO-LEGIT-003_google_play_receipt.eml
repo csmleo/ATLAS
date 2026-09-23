@@ -1,0 +1,53 @@
+From: noreply@google.com
+To: john.doe@example.com
+Subject: Your Google Play purchase receipt - July 2025
+Date: Wed, 23 Jul 2025 10:05:00 +0000
+Message-ID: <CAGzNHmDEMO003.legit@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Reply-To: noreply@google.com
+Return-Path: <noreply@scoutcamp.bounces.google.com>
+X-Mailer: Google Mail
+X-Originating-IP: 209.85.220.41
+Received: from mail-sor-f41.google.com (209.85.220.41) by
+  mx.example.com with ESMTPS id DEMO003; Wed, 23 Jul 2025 10:05:03 +0000
+Received: from mail-lj1-f182.google.com (209.85.234.182) by
+  mail-sor-f41.google.com with SMTP id DEMO003b; Wed, 23 Jul 2025 10:05:02 +0000
+Authentication-Results: mx.example.com;
+  dkim=pass header.i=@google.com header.s=20230601 header.b=AbCdEfGh;
+  spf=pass (google.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=noreply@scoutcamp.bounces.google.com;
+  dmarc=pass (p=reject) header.from=google.com
+
+<html>
+<body style="font-family:Arial,sans-serif;background:#ffffff;padding:20px;">
+<div style="max-width:600px;margin:auto;">
+  <p style="color:#5f6368;font-size:14px;">Google Play</p>
+  <h2 style="color:#202124;">Your purchase receipt</h2>
+  <p>Hi John,</p>
+  <p>Thank you for your purchase on Google Play. Here is your receipt:</p>
+  <table style="width:100%;border-collapse:collapse;margin:20px 0;">
+    <tr style="background:#f8f9fa;">
+      <td style="padding:10px;border:1px solid #e0e0e0;"><strong>Item</strong></td>
+      <td style="padding:10px;border:1px solid #e0e0e0;">Minecraft (1 month subscription)</td>
+    </tr>
+    <tr>
+      <td style="padding:10px;border:1px solid #e0e0e0;"><strong>Order ID</strong></td>
+      <td style="padding:10px;border:1px solid #e0e0e0;">GPA.DEMO-0000-0000-00001</td>
+    </tr>
+    <tr style="background:#f8f9fa;">
+      <td style="padding:10px;border:1px solid #e0e0e0;"><strong>Date</strong></td>
+      <td style="padding:10px;border:1px solid #e0e0e0;">23 July 2025</td>
+    </tr>
+    <tr>
+      <td style="padding:10px;border:1px solid #e0e0e0;"><strong>Total charged</strong></td>
+      <td style="padding:10px;border:1px solid #e0e0e0;">EUR 7.99</td>
+    </tr>
+  </table>
+  <p>If you did not make this purchase, you can request a refund within 48 hours
+  at <a href="https://play.google.com/store/account/orderhistory">Google Play Help Center</a>.</p>
+  <p>Thank you,<br/>The Google Play Team</p>
+  <hr/>
+  <p><small>Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</small></p>
+</div>
+</body>
+</html>

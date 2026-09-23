@@ -1,0 +1,17 @@
+{
+    "spf_failed": true,
+    "dkim_failed": false,
+    "dmarc_failed": true,
+    "sender_mismatch": true,
+    "suspicious_url": false,
+    "malicious_ip": false,
+    "suspicious_domain": true,
+    "attachment_suspicious": false,
+    "urgent_language": true,
+    "reply_to_mismatch": false,
+    "new_sender": true,
+    "urls": [
+        "https://www.o-i.ch"
+    ],
+    "url_count": 1
+}

@@ -1,0 +1,40 @@
+From: Accounts Billing <billing-notice@invoice-center.example>
+To: procurement@example.com
+Subject: Invoice INV-2026-0910-447 requires review
+Date: Thu, 10 Sep 2026 08:44:12 +0000
+Message-ID: <mal-003-20260910@invoice-center.example>
+MIME-Version: 1.0
+Authentication-Results: mx.example.com; spf=fail smtp.mailfrom=invoice-center.example; dkim=pass header.d=invoice-center.example; dmarc=fail header.from=invoice-center.example
+Received: from mx.invoice-center.example (203.0.113.88) by mx.example.com with ESMTPS id G7; Thu, 10 Sep 2026 08:44:12 +0000
+Received: from billing-host.invoice-center.example (198.51.100.24) by mx.invoice-center.example with ESMTP id H8; Thu, 10 Sep 2026 08:44:07 +0000
+Content-Type: multipart/mixed; boundary="ATLAS-003"
+
+--ATLAS-003
+Content-Type: text/plain; charset="utf-8"
+
+Hello,
+
+The attached invoice is ready for review.
+
+Please open the attached invoice details and confirm the payment status before the processing deadline.
+
+Regards,
+Billing Operations
+
+--ATLAS-003
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Hello,</p>
+<p>The attached invoice is ready for review.</p>
+<p>Please review the document before the processing deadline.</p>
+</body></html>
+
+--ATLAS-003
+Content-Type: text/plain; name="invoice_details.txt"
+Content-Disposition: attachment; filename="invoice_details.txt"
+Content-Transfer-Encoding: base64
+
+QVRMQVMgaW52b2ljZSByZXZpZXcgYXR0YWNobWVudApJbnZvaWNlIHJlZmVyZW5jZTogSU5WLTIwMjYtMDkxMC00NDcKQW1vdW50OiAxODQ1MC4wMApTdGF0dXM6IFBlbmRpbmcgcmV2aWV3ClRoaXMgZmlsZSBpcyBhIGhhcm1sZXNzIHN5bnRoZXRpYyBkZW1vbnN0cmF0aW9uIGF0dGFjaG1lbnQuCg==
+
+--ATLAS-003--

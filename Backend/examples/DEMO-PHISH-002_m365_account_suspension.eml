@@ -1,0 +1,43 @@
+From: security-alerts@micr0soft-account-verify.com
+To: john.doe@example.com
+Subject: [ACTION REQUIRED] Your Microsoft 365 account will be suspended in 24 hours
+Date: Tue, 22 Jul 2025 14:23:00 +0000
+Message-ID: <20250722142300.DEMO-PHISH-002@micr0soft-account-verify.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Reply-To: noreply@micr0soft-support-center.net
+Return-Path: <bounce@spamcluster-eu.example.org>
+X-Mailer: SendGrid
+X-Originating-IP: 91.243.44.12
+Received: from spamcluster-eu.example.org (91.243.44.12) by
+  mx.example.com with SMTP id DEMO002; Tue, 22 Jul 2025 14:23:05 +0000
+Received: from unknown (HELO micr0soft-account-verify.com) (10.0.0.1)
+  by spamcluster-eu.example.org with SMTP; Tue, 22 Jul 2025 14:23:00 +0000
+Authentication-Results: mx.example.com;
+  dkim=fail (signature verification failed) header.d=micr0soft-account-verify.com;
+  spf=fail (domain of micr0soft-account-verify.com does not designate 91.243.44.12 as permitted sender);
+  dmarc=fail
+
+<html>
+<body style="font-family:Calibri,sans-serif;background:#f0f0f0;padding:20px;">
+<div style="max-width:600px;margin:auto;background:white;padding:30px;border-top:4px solid #0078d4;">
+  <img src="https://micr0soft-account-verify.com/logo.png" alt="Microsoft" width="150" />
+  <h2 style="color:#0078d4;">Unusual sign-in activity detected</h2>
+  <p>Dear Microsoft 365 user,</p>
+  <p>We detected <strong>unusual sign-in activity</strong> on your Microsoft 365 account.
+  Your account will be <strong style="color:red;">SUSPENDED within 24 hours</strong>
+  if you do not verify your identity immediately.</p>
+  <p>To avoid suspension and secure your account, please click the link below:</p>
+  <p style="text-align:center;">
+    <a href="https://micr0soft-secure-login.xyz/verify?token=eyJhbGciOiJIUzI1NiJ9.DEMO"
+       style="background:#0078d4;color:white;padding:12px 24px;text-decoration:none;border-radius:4px;">
+      Verify My Account Now
+    </a>
+  </p>
+  <p><small>If you believe you received this message in error, you can ignore it safely.
+  Microsoft will never ask for your password by email.</small></p>
+  <hr/>
+  <p><small>Microsoft Corporation, One Microsoft Way, Redmond, WA 98052, USA</small></p>
+</div>
+</body>
+</html>

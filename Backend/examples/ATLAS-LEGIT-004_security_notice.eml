@@ -1,0 +1,34 @@
+From: IT Service Desk <it-helpdesk@example.com>
+To: employee@example.com
+Subject: Scheduled maintenance notification
+Date: Thu, 10 Sep 2026 11:30:00 +0000
+Message-ID: <legit-004-20260910@example.com>
+MIME-Version: 1.0
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=example.com; dkim=pass header.d=example.com; dmarc=pass header.from=example.com
+Received: from mail.example.com (198.51.100.24) by mx.example.com with ESMTPS id I9; Thu, 10 Sep 2026 11:30:00 +0000
+Received: from notification.example.com (203.0.113.88) by mail.example.com with ESMTP id J0; Thu, 10 Sep 2026 11:29:57 +0000
+Content-Type: multipart/alternative; boundary="ATLAS-004"
+
+--ATLAS-004
+Content-Type: text/plain; charset="utf-8"
+
+Hello,
+
+The IT Service Desk will perform scheduled maintenance on the internal document service from 22:00 to 22:30 UTC.
+
+No action is required. This message is for notification purposes only.
+
+Regards,
+IT Service Desk
+
+--ATLAS-004
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Hello,</p>
+<p>The IT Service Desk will perform scheduled maintenance from <b>22:00 to 22:30 UTC</b>.</p>
+<p>No action is required.</p>
+<p>Regards,<br>IT Service Desk</p>
+</body></html>
+
+--ATLAS-004--

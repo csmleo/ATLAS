@@ -1,0 +1,48 @@
+# ==============================================================================
+# Phishing-EML-Analyzer — .gitignore
+# ==============================================================================
+
+# --- Environment & Secrets ---
+.env
+*.key
+*.pem
+*.p12
+
+# --- Real Evidence Samples (private, never commit to public repos) ---
+samples/*
+!samples/.gitkeep
+originals/*
+!originals/.gitkeep
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# --- Generated Artifacts (keep empty dirs via .gitkeep, ignore outputs) ---
+reportes/*
+!reportes/.gitkeep
+screenshots/*
+!screenshots/.gitkeep
+logs/*
+!logs/.gitkeep
+*.log
+
+# --- Planning & Walkthrough (local only) ---
+task.md
+walkthrough.md
+
+# --- IDE & OS ---
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db

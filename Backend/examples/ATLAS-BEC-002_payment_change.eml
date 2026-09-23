@@ -1,0 +1,27 @@
+From: Finance Director <finance-director@company-finance.example>
+To: accounts-payable@example.com
+Reply-To: urgent-payments@external-settlement.example
+Return-Path: <mailer@company-finance.example>
+Subject: Urgent: supplier bank details update
+Date: Wed, 09 Sep 2026 14:22:10 +0000
+Message-ID: <bec-002-20260909@company-finance.example>
+MIME-Version: 1.0
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=company-finance.example; dkim=fail header.d=external-settlement.example; dmarc=fail header.from=company-finance.example
+Received: from relay.finance.example (198.51.100.24) by mx.example.com with ESMTPS id D4; Wed, 09 Sep 2026 14:22:10 +0000
+Received: from smtp.external-settlement.example (203.0.113.88) by relay.finance.example with ESMTP id E5; Wed, 09 Sep 2026 14:22:04 +0000
+Received: from finance-laptop (192.0.2.1) by smtp.external-settlement.example with ESMTP id F6; Wed, 09 Sep 2026 14:21:58 +0000
+Content-Type: text/plain; charset="utf-8"
+
+Hi Accounts Payable,
+
+We have changed the settlement account for the current supplier payment.
+
+Please update the beneficiary details before processing the invoice. This is time-sensitive and should be completed today.
+
+New settlement portal:
+https://supplier-settlement.example/update
+
+Please do not delay the payment run.
+
+Regards,
+Finance Director

@@ -1,0 +1,8 @@
+From: Account Support <support@service.example>
+To: Bob Example <bob@example.org>
+Subject: Account notice
+Authentication-Results: mx.example.com; spf=pass; dkim=pass; dmarc=pass
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Please review your account notice at https://www.o-i.ch

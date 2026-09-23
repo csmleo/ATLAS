@@ -1,0 +1,39 @@
+{
+  "_comment": "Risk scoring weights for Phishing-EML-Analyzer — Do NOT edit without updating reporter.py",
+  "layer_weights": {
+    "network": 0.25,
+    "semantic": 0.35,
+    "dynamic": 0.40
+  },
+  "risk_levels": {
+    "0-30":  { "label": "LEGITIMATE",         "color": "green",  "priority": "P4", "sla_minutes": null },
+    "31-60": { "label": "SUSPICIOUS",          "color": "yellow", "priority": "P3", "sla_minutes": 240 },
+    "61-80": { "label": "HIGH_RISK",           "color": "orange", "priority": "P2", "sla_minutes": 60 },
+    "81-100":{ "label": "CONFIRMED_PHISHING",  "color": "red",    "priority": "P1", "sla_minutes": 15 }
+  },
+  "network_penalties": {
+    "spf_fail":            20,
+    "spf_softfail":        10,
+    "dkim_fail":           25,
+    "dmarc_fail":          30,
+    "dmarc_none_policy":   10,
+    "from_reply_mismatch": 20,
+    "received_hop_anomaly": 15
+  },
+  "semantic_penalties": {
+    "urgency_high":           20,
+    "urgency_medium":         10,
+    "executive_impersonation": 40,
+    "credential_harvesting":  30,
+    "financial_request":      25,
+    "brand_impersonation":    20
+  },
+  "dynamic_penalties": {
+    "sandbox_malicious_verdict":  50,
+    "phishing_page_detected":     45,
+    "redirect_chain_suspicious":  25,
+    "dropper_detected":           40,
+    "virustotal_detections_gt5":  30,
+    "virustotal_detections_1to5": 15
+  }
+}

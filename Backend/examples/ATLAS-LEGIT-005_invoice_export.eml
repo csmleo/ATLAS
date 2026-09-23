@@ -1,0 +1,37 @@
+From: Billing Operations <billing@example.com>
+To: finance@example.com
+Subject: Monthly invoice export available
+Date: Thu, 10 Sep 2026 15:05:20 +0000
+Message-ID: <legit-005-20260910@example.com>
+MIME-Version: 1.0
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=example.com; dkim=pass header.d=example.com; dmarc=pass header.from=example.com
+Received: from billing.example.com (198.51.100.24) by mx.example.com with ESMTPS id K1; Thu, 10 Sep 2026 15:05:20 +0000
+Received: from export.example.com (203.0.113.88) by billing.example.com with ESMTP id K2; Thu, 10 Sep 2026 15:05:16 +0000
+Content-Type: multipart/mixed; boundary="ATLAS-005"
+
+--ATLAS-005
+Content-Type: text/plain; charset="utf-8"
+
+Hello Finance Team,
+
+The monthly invoice export is available for internal review.
+
+Batch: SEP-2026-INV-01
+Status: Complete
+
+No action is required outside the normal finance review process.
+
+Regards,
+Billing Operations
+
+--ATLAS-005
+Content-Type: text/csv; name="invoice_export_summary.csv"
+Content-Disposition: attachment; filename="invoice_export_summary.csv"
+Content-Transfer-Encoding: base64
+
+{b64("invoice_id,status,amount
+INV-SEP-001,complete,1250.00
+INV-SEP-002,complete,860.00
+")}
+
+--ATLAS-005--

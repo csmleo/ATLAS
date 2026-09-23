@@ -1,0 +1,45 @@
+# ==============================================================================
+# Phishing-EML-Analyzer — Docker Compose
+# ==============================================================================
+# Orchestrates the analyzer container with persistent volumes for
+# input samples and output reports.
+#
+# Usage:
+#   docker-compose up --build
+#   docker-compose run analyzer -f originals/sample_phishing_bec.eml --no-sandbox
+# ==============================================================================
+
+version: "3.9"
+
+services:
+  analyzer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: phishing-eml-analyzer
+    image: phishing-eml-analyzer:latest
+
+    # Load API keys from local .env file (never hardcoded)
+    env_file:
+      - .env
+
+    # Mount local directories into the container
+    volumes:
+      - ./originals:/app/originals:ro        # Read-only: input .eml files
+      - ./reportes:/app/reportes             # Read-write: generated Markdown/JSON reports
+      - ./screenshots:/app/screenshots       # Read-write: sandbox screenshots
+      - ./logs:/app/logs                     # Read-write: audit log
+
+    # Default command — override at runtime with the .eml path
+    command: ["-f", "originals/sample_phishing_bec.eml", "--no-sandbox"]
+
+    # Security hardening
+    security_opt:
+      - no-new-privileges:true
+    read_only: false      # Set to true once output dirs are handled via volumes
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_RAW           # Required for DNS resolution
+
+    restart: "no"
