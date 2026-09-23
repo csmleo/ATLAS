@@ -1,0 +1,22 @@
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Backend
+backend/__pycache__/
+backend/.venv/
+backend/venv/
+backend/.env
+backend/logs/
+backend/screenshots/
+
+# Python
+*.pyc
+
+# Generated/runtime files
+backend/api_uploads/
+backend/reportes/
+
+# IDE
+.vscode/
+.idea/
